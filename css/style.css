@@ -3,3 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.background{
+    background-color: rgba(8,59,76,255);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.box-blue{
+    background-color: rgba(19,137,178,255);
+}
+
+.box-green{
+    background-color: rgba(12,214,161,255);
+}
+
+.box-pink{
+    background-color: rgba(240,70,111,255);
+}
+
+.box-yellow{
+    background-color: rgba(255,209,102,255);
+}

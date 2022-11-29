@@ -7,22 +7,31 @@
 // 2-Collego al DOM attraveso append()
 // 3-Stilizzo il DOm e mostro a video la soluzione “Fizz” “Buzz” “FizzBuzz”
 
+const container = document.querySelector(`.container`);
+
 for  (let i = 1 ; i<=100 ; i++){
+
+    let box;
 
     if (i % 15 == 0){
         console.log(`FizzBuzz`);
+        box = `<div class="box box-pink">FizzBuzz</div>`;
     }
 
     else if (i % 5 == 0){
         console.log(`Buzz`);
+        box = `<div class="box box-yellow">Buzz</div>`;
     }
     
     else if (i % 3 == 0){
         console.log(`Fizz`);
+        box = `<div class="box box-green">Fizz</div>`;
     }
 
     else{
         console.log(i);
+        box = `<div class="box box-blue">${i}</div>`;
     }
 
+    container.innerHTML += box;
 }
