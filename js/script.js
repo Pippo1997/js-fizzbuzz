@@ -6,3 +6,23 @@
 //     1.3 Per i multipli sia di 3 che 5 stampo in console “FizzBuzz”
 // 2-Collego al DOM attraveso append()
 // 3-Stilizzo il DOm e mostro a video la soluzione “Fizz” “Buzz” “FizzBuzz”
+
+for  (let i = 1 ; i<=100 ; i++){
+
+    if (i % 15 == 0){
+        console.log(`FizzBuzz`);
+    }
+
+    else if (i % 5 == 0){
+        console.log(`Buzz`);
+    }
+    
+    else if (i % 3 == 0){
+        console.log(`Fizz`);
+    }
+
+    else{
+        console.log(i);
+    }
+
+}
